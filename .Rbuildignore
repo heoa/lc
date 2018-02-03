@@ -1,3 +1,6 @@
 ^lc\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE$
+^\.travis\.yml$
+^codecov\.yml$
+^README\.Rmd$
