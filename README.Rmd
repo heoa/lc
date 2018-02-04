@@ -11,11 +11,14 @@ knitr::opts_chunk$set(
   fig.path = "man/figures/README-",
   out.width = "100%"
 )
+
+library(lc)
 ```
 
 # lc -- List comprehension in R
 
 [![Travis build status](https://travis-ci.org/mailund/lc.svg?branch=master)](https://travis-ci.org/mailund/lc)
+[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/wsopc251n1jpj40j/branch/master?svg=true)](https://ci.appveyor.com/project/mailund/lc/branch/master)
 [![Coverage Status](https://img.shields.io/codecov/c/github/mailund/lc/master.svg)](https://codecov.io/github/mailund/lc?branch=master)
 [![Coverage Status](https://coveralls.io/repos/github/mailund/lc/badge.svg?branch=master)](https://coveralls.io/github/mailund/lc?branch=master)
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
