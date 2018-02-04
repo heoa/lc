@@ -1,7 +1,7 @@
 Package: lc
 Version: 0.1.0
 Title: List Comprehension
-Description: This package introduces a syntax for list comprehension in R.
+Description: Introduces a syntax for list comprehension in R.
     This provides a more intuitive syntax than Filter and Map
     for working with list objects.
 Authors@R: person("Thomas", "Mailund", email = "mailund@birc.au.dk", role = c("aut", "cre"))
