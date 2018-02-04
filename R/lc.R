@@ -1,19 +1,11 @@
 #' List comprehension
 #'
 #' This function implements list comprehension, an alternative to Filter and Map for working
-#' with lists. The syntax is as follows:
-#'
-#' \code{lc(expr, lists, predicates)}
-#'
-#' where \code{expr} is some expression to be evaluated for all elements in the \code{lists},
+#' with lists. The syntax is as follows: lc(expr, lists, predicates) where \code{expr} is some expression to be evaluated for all elements in the \code{lists},
 #' where \code{lists} are one or more named lists, where these are specified by a name
 #' and an expression \code{name = list_expr}, and where \code{predicates} are expressions
 #' that should evaluated to a boolean value. For example, to get a list of all even numbers, squared,
-#' from a list \code{x} we can write
-#'
-#' \code{lc(x ** 2, x = x, x %% 2 == 0)}
-#'
-#' The result of a call to \code{lc} is a list constructed from the expressions in \code{expr},
+#' from a list \code{x} we can write lc(x ** 2, x = x, x \%\% 2 == 0). The result of a call to \code{lc} is a list constructed from the expressions in \code{expr},
 #' for all elements in the input lists where the predicates evaluate to true.
 #'
 #' @param expr An expression that will be evaluated for each element in the input lists.
