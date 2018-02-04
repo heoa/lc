@@ -11,7 +11,7 @@ status](https://ci.appveyor.com/api/projects/status/wsopc251n1jpj40j/branch/mast
 Status](https://img.shields.io/codecov/c/github/mailund/lc/master.svg)](https://codecov.io/github/mailund/lc?branch=master)
 [![Coverage
 Status](https://coveralls.io/repos/github/mailund/lc/badge.svg?branch=master)](https://coveralls.io/github/mailund/lc?branch=master)
-[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 
 The goal of `lc` is to implement Haskell-like list comprehension in R.
 
@@ -41,7 +41,7 @@ qsort <- function(lst) {
 }
 
 (lst <- sample(1:10))
-#>  [1]  9  1  8  5  4 10  2  3  6  7
+#>  [1]  1  6  3  9  7  5 10  4  2  8
 unlist(qsort(lst))
 #>  [1]  1  2  3  4  5  6  7  8  9 10
 ```
@@ -60,7 +60,7 @@ qsort <- function(lst) {
 }
 
 (lst <- sample(1:10))
-#>  [1]  5  7  1 10  9  2  8  3  4  6
+#>  [1]  2  5  7  9  6  1  3  8  4 10
 unlist(qsort(lst))
 #>  [1]  1  2  3  4  5  6  7  8  9 10
 ```
