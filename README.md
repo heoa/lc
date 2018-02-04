@@ -5,14 +5,13 @@
 
 [![Travis build
 status](https://travis-ci.org/mailund/lc.svg?branch=master)](https://travis-ci.org/mailund/lc)
-[![AppVeyor Build
-Status](https://ci.appveyor.com/mailund/lc)](https://ci.appveyor.com/api/projects/status/github//mailund/lc/?branch=master&svg=true)
+[![AppVeyor build
+status](https://ci.appveyor.com/api/projects/status/wsopc251n1jpj40j/branch/master?svg=true)](https://ci.appveyor.com/project/mailund/lc/branch/master)
 [![Coverage
 Status](https://img.shields.io/codecov/c/github/mailund/lc/master.svg)](https://codecov.io/github/mailund/lc?branch=master)
 [![Coverage
 Status](https://coveralls.io/repos/github/mailund/lc/badge.svg?branch=master)](https://coveralls.io/github/mailund/lc?branch=master)
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![Depsy](http://depsy.org/api/package/cran/lc/badge.svg)](http://depsy.org/package/r/lc)
 
 The goal of `lc` is to implement Haskell-like list comprehension in R.
 
@@ -42,7 +41,7 @@ qsort <- function(lst) {
 }
 
 (lst <- sample(1:10))
-#>  [1]  5 10  6  3  8  2  1  9  7  4
+#>  [1]  9  1  8  5  4 10  2  3  6  7
 unlist(qsort(lst))
 #>  [1]  1  2  3  4  5  6  7  8  9 10
 ```
@@ -61,7 +60,7 @@ qsort <- function(lst) {
 }
 
 (lst <- sample(1:10))
-#>  [1]  6  8  3  2  4 10  5  9  7  1
+#>  [1]  5  7  1 10  9  2  8  3  4  6
 unlist(qsort(lst))
 #>  [1]  1  2  3  4  5  6  7  8  9 10
 ```
