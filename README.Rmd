@@ -24,6 +24,7 @@ suppressPackageStartupMessages(library(pmatch, quietly = TRUE))
 [![Coverage Status](https://img.shields.io/codecov/c/github/mailund/lc/master.svg)](https://codecov.io/github/mailund/lc?branch=master)
 [![Coverage Status](https://coveralls.io/repos/github/mailund/lc/badge.svg?branch=master)](https://coveralls.io/github/mailund/lc?branch=master)
 [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+[![CRAN status](http://www.r-pkg.org/badges/version/lc)](https://cran.r-project.org/package=lc)
 
 The goal of `lc` is to implement Haskell- and Python-like list comprehension in R. List comprehensions provide a syntax for mapping and filtering sequences. In R we would use functions such as `Map` or `Filter`, or the `purrr` alternatives, for this, but in languages such as Haskell or Python, there is syntactic sugar to make combinations of mapping and filtering easier to program.
 

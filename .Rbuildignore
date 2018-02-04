@@ -7,3 +7,4 @@
 
 ^cleanup.R$
 ^appveyor\.yml$
+^cran-comments\.md$
