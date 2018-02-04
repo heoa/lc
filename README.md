@@ -27,5 +27,18 @@ devtools::install_github("mailund/lc")
 FIXME
 
 ``` r
-## basic example code
+qsort <- function(lst) {
+  n <- length(lst)
+  if (n < 2) return(lst)
+  
+  pivot <- lst[[sample(n, size = 1)]]
+  smaller <- Filter(function(x) x < pivot, lst)
+  equal <- Filter(function(x) x == pivot, lst)
+  larger <- Filter(function(x) x > pivot, lst)
+  c(qsort(smaller), equal, qsort(larger))
+}
+(lst <- sample(1:10))
+#>  [1] 10  1  7  9  2  4  6  5  3  8
+unlist(qsort(lst))
+#>  [1]  1  2  3  4  5  6  7  8  9 10
 ```
