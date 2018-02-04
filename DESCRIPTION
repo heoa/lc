@@ -1,8 +1,8 @@
 Package: lc
 Version: 0.1.0
 Title: List Comprehension
-Description: This package introduces a syntax for writing Haskell- or Python-like
-    list comprehension in R. This provides a more intuitive syntax than Filter and Map
+Description: This package introduces a syntax for list comprehension in R.
+    This provides a more intuitive syntax than Filter and Map
     for working with list objects.
 Authors@R: person("Thomas", "Mailund", email = "mailund@birc.au.dk", role = c("aut", "cre"))
 License: GPL-3

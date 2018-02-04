@@ -3,3 +3,4 @@
 export(lc)
 import(rlang)
 importFrom(purrr,map)
+importFrom(purrr,pmap)

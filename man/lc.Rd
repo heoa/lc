@@ -12,5 +12,20 @@ lc(expr, ...)
 \item{...}{Additional list or predicate arguments.}
 }
 \description{
-List comprehension
+This function implements list comprehension, an alternative to Filter and Map for working
+with lists. The syntax is as follows:
+}
+\examples{
+qsort <- function(lst) {
+    n <- length(lst)
+    if (n < 2) return(lst)
+    pivot <- lst[[sample(n, size = 1)]]
+    smaller <- lc(x, x = lst, x < pivot)
+    equal <- lc(x, x = lst, x == pivot)
+    larger <- lc(x, x = lst, x > pivot)
+    c(qsort(smaller), equal, qsort(larger))
+}
+(lst <- sample(1:10))
+unlist(qsort(lst))
+
 }

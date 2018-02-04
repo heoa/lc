@@ -33,6 +33,7 @@
 #' unlist(qsort(lst))
 #'
 #' @importFrom purrr map
+#' @importFrom purrr pmap
 #' @import rlang
 #' @export
 lc <- function(expr, ...) {
