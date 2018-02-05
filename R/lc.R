@@ -33,7 +33,7 @@ lc <- function(expr, ...) {
     rest <- quos(...)
 
     lists <- map(rest[names(rest) != ""], eval_tidy)
-    predicates <- map(rest[names(rest) == ""], UQE)
+    predicates <- map(rest[names(rest) == ""], get_expr)
 
     keep_index <- rep(TRUE, length(lists[[1]]))
     for (pred in predicates) {
@@ -42,6 +42,6 @@ lc <- function(expr, ...) {
     }
     filtered_lists <- map(lists, ~.x[keep_index])
 
-    f <- new_function(lists, body = UQE(expr), env = get_env(expr))
+    f <- new_function(lists, body = get_expr(expr), env = get_env(expr))
     pmap(filtered_lists, f)
 }
