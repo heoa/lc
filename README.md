@@ -12,8 +12,6 @@ Status](https://img.shields.io/codecov/c/github/mailund/lc/master.svg)](https://
 [![Coverage
 Status](https://coveralls.io/repos/github/mailund/lc/badge.svg?branch=master)](https://coveralls.io/github/mailund/lc?branch=master)
 [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
-[![CRAN
-status](http://www.r-pkg.org/badges/version/lc)](https://cran.r-project.org/package=lc)
 
 The goal of `lc` is to implement Haskell- and Python-like list
 comprehension in R. List comprehensions provide a syntax for mapping and
@@ -29,6 +27,12 @@ You can install lc from GitHub with:
 ``` r
 install.packages("devtools")
 devtools::install_github("mailund/lc")
+```
+
+or from CRAN using
+
+``` r
+install.packages("lc")
 ```
 
 ## Examples
@@ -56,7 +60,7 @@ qsort <- function(lst) {
 }
 
 (lst <- sample(1:10))
-#>  [1]  5  4  6  1  9  2  3  7  8 10
+#>  [1]  1  4  3  8  5  6  7  9 10  2
 unlist(qsort(lst))
 #>  [1]  1  2  3  4  5  6  7  8  9 10
 ```
@@ -77,7 +81,7 @@ qsort <- function(lst) {
 }
 
 (lst <- sample(1:10))
-#>  [1]  7  6  8  4  3  1 10  9  5  2
+#>  [1]  6  5  3  7  2  8  1  9 10  4
 unlist(qsort(lst))
 #>  [1]  1  2  3  4  5  6  7  8  9 10
 ```
